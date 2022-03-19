@@ -10,6 +10,7 @@
   font-family: 'Noto Serif KR', serif;
   z-index: 1;
   pointer-events: none;
+  width: 100%
 }
 
 .site-title__text {
@@ -22,7 +23,7 @@
 }
 
 .site-title__text--sub {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 200;
   margin-top: 10px;
   transition: font-size 0.2s;
