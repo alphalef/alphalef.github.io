@@ -3,8 +3,8 @@ meta_title: Collider Jekyll Theme
 email: example@example.com
 description: >
   This is the Collider Jekyll Theme.
-baseurl: ""
-url: "https://jekyll-theme-collider.netlify.com"
+baseurl: "http://gongan.space"
+url: "http://gongan.space"
 hosted_url: ""
 github_username: ""
 linked_in_profile: ""
