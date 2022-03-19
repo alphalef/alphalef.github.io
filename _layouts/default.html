@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="{{ "/assets/images/theme-image.png" | prepend: site.baseurl }}">
+    <meta property="og:description" content="The Collider Jekyll Theme is a gem-based theme that helps makes use of the jekyll-paginate-v2 plugin and particles.js.">
+    <meta property="og:title" content="{{site.meta_title}}">
+    <meta property="og:url" content="//{{site.url}}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="wrap">
+      {% unless page.title == 'Home' %}{% include header.html %}{% endunless %}
+      {{ content }}
+    </div>
+  </body>
+</html>

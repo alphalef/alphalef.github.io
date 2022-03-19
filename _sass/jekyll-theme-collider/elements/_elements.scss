@@ -1,0 +1,13 @@
+a {
+  color: $mine-shaft;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: lighten($mine-shaft, $lighten--button);
+}
+
+p {
+  line-height: 1.25;
+  overflow-wrap: break-word;
+}
