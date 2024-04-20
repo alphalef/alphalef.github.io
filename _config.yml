@@ -23,7 +23,6 @@ exclude:
 collections:
   blog_posts:
     output: true
-    future: true
     permalink: /collection/:name
   blog_tags:
 
@@ -44,5 +43,7 @@ permalink: pretty
 
 sass:
   sass_dir: _sass
+
+future: true
 
 excerpt_separator: "<!-- more -->"
