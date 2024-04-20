@@ -1,0 +1,17 @@
+---
+layout: default
+title: Blog
+paginate: true
+---
+
+<ul class="post-list">
+  <!-- All posts -->
+  {% for post in site.blog_posts %}
+    <li>
+      <h2>
+        <a class="post-list__link" href="{{ post.url | relative_url }}" style="color:#FFF">{{ post.title | escape }}</a>
+      </h2>
+      <span style="color:white">{{ post.date | date: "%b %-d, %Y" }}</span>
+   </li>
+  {% endfor %}
+
