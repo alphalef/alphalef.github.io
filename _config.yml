@@ -19,10 +19,11 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-
+ 
 collections:
   blog_posts:
     output: true
+    future: true
     permalink: /collection/:name
   blog_tags:
 

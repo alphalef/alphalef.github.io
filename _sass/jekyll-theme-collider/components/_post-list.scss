@@ -13,11 +13,11 @@
 
 .post-list__link {
   text-decoration: none;
-  font-size: 42px;
+  font-size: 22px;
   transition: color 0.5s;
-  font-family: "Operator Mono SSm-Medium";
+  font-family: "Noto Serif KR', serif";
   &:hover {
-    color: lighten($mine-shaft, $lighten--button);
+    color: $white; 
   }
 }
 
@@ -59,5 +59,9 @@
 }
 
 .post.post-list {
-  margin-top: 2em;
+  margin-top: 1em;
+}
+
+.post__content p {
+    line-height: 1.6;
 }

@@ -52,15 +52,13 @@ header.header__homepage {
     right: 1.5em;
   }
 }
-
+	
 .header__title {
-  margin: 2em auto 1.5em auto;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
   text-align: center;
-  font-family: "Operator Mono SSm-Bold";
-  font-size: 2.75em;
+  font-family: "Noto Serif KR', serif";
+  font-size: 1.75em;
   color: $white;
+  margin-bottom: 0px;
 }
 
 @media all and (max-width: 550px) {

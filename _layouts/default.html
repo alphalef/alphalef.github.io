@@ -9,10 +9,32 @@
     <meta property="og:url" content="//{{site.url}}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <style>
+    ::-webkit-scrollbar {
+	width: 8px;  /* 스크롤바의 너비 */
+	height: 8px; /* 수평 스크롤바의 높이 */
+    }
+
+    ::-webkit-scrollbar-track {
+	background-color: #f1f1f1; /* 트랙의 배경 색상 */
+    }
+
+    ::-webkit-scrollbar-thumb {
+	background-color: darkgrey;  /* 핸들의 색상 */
+        border-radius: 10px;         /* 핸들의 모서리를 둥글게 */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+	background-color: #555; /* 핸들을 호버했을 때의 색상 */
+    }
+
+    
+
+    </style>
+
   </head>
   <body>
     <div class="wrap">
-      {% unless page.title == 'Home' %}{% include header.html %}{% endunless %}
       {{ content }}
     </div>
   </body>
