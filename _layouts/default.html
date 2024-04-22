@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:image" content="{{ "/assets/images/theme-image.png" | prepend: site.baseurl }}">
-    <meta property="og:description" content="단상과 묵상이 있는 공간">
-    <meta property="og:title" content="{{site.meta_title}}">
-    <meta property="og:url" content="//{{site.url}}">
+    {% if page.image == nil %}
+    <meta property="og:image" content="https://gongan.space/assets/images/theme-image.png">
+    {% else %}
+    <meta property="og:image" content="{{ page.image }}">
+    {% endif %}
+    <meta property="og:description" content="{{site.description}}">
+
+    {% if page.title == nil %}
+    <meta property="og:title" content="공간(空間)">
+    {% elsif page.title == 'Home' %}
+    <meta property="og:title" content="공간(空間)">
+    {% else %}
+    <meta property="og:title" content="{{page.title}}">
+    {% endif %}
+    <meta property="og:url" content="{{site.url}}{{page.url}}">
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">

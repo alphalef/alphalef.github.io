@@ -7,7 +7,7 @@ paginate: true
 <ul class="post-list">
   <!-- All posts -->
   {% assign posts = site.blog_posts | reverse %}
-  {% for post in posts limit:3 %}
+  {% for post in posts %}
     <li>
       <h2 style="margin-bottom: 0.43em;">
         <a class="post-list__link" href="{{ post.url | relative_url }}" style="color:#FFF;">{{ post.title | escape }}</a>
@@ -26,7 +26,7 @@ paginate: true
     // iframe 내부에서 실행되고 있음
     } else {
     // 직접 로드되고 있음
-	document.body.style.background = "url('../assets/images/back.png')";
+	document.body.style.background = "url('https://gongan.space/assets/images/back.png')";
 	document.body.style.backgroundSize = "cover";
 	document.body.style.backgroundAttachment = "fixed";
 	document.body.style.maxWidth = "600px";
