@@ -16,6 +16,7 @@ disqus:
 markdown: kramdown
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
