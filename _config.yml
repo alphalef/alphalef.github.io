@@ -39,3 +39,5 @@ future: true
 excerpt_separator: "<!-- more -->"
 
 timezone: Asia/Seoul
+
+host: 0.0.0.0
