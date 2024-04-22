@@ -15,7 +15,11 @@ paginate: true
       <span style="color:white">{{ post.date | date: "%b %-d, %Y" }}</span>
    </li>
   {% endfor %}
+
+  <br><br>
+    <a href="/" id="homepage" style="display:none;">[첫화면]</a>
 </ul>
+
 
 <script>
     if (window.self !== window.top) {
@@ -30,6 +34,7 @@ paginate: true
 	document.body.style.padding = "0px 30px"
 	document.getElementsByClassName('post-list')[0].style.background='rgba(0,0,0,0.4)';
 	document.getElementsByClassName('post-list')[0].style.padding='20px';
+	document.getElementById('homepage').style.display='block';
     }
 
 </script>
