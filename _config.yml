@@ -37,3 +37,5 @@ sass:
 future: true
 
 excerpt_separator: "<!-- more -->"
+
+timezone: Asia/Seoul
