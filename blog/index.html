@@ -17,3 +17,19 @@ paginate: true
   {% endfor %}
 </ul>
 
+<script>
+    if (window.self !== window.top) {
+    // iframe 내부에서 실행되고 있음
+    } else {
+    // 직접 로드되고 있음
+	document.body.style.background = "url('../assets/images/back.png')";
+	document.body.style.backgroundSize = "cover";
+	document.body.style.backgroundAttachment = "fixed";
+	document.body.style.maxWidth = "600px";
+	document.body.style.margin = "50px auto";
+	document.body.style.padding = "0px 30px"
+	document.getElementsByClassName('post-list')[0].style.background='rgba(0,0,0,0.4)';
+	document.getElementsByClassName('post-list')[0].style.padding='20px';
+    }
+
+</script>

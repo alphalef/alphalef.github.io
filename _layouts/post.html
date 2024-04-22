@@ -14,5 +14,40 @@ layout: default
 
   <br><br>
   <a href="/blog" style="text-align:center">[목록]</a>
+  &nbsp;
+  <a href="#" onclick="copyPageUrl()">[주소복사]</a>
+  &nbsp;
+  <a href="/" id="homepage" style="display:none;">[첫화면]</a>
 
 </article>
+
+<script>
+    if (window.self !== window.top) {
+    // iframe 내부에서 실행되고 있음
+    } else {
+    // 직접 로드되고 있음
+	document.body.style.background = "url('../assets/images/back.png')";
+	document.body.style.backgroundSize = "cover";
+	document.body.style.backgroundAttachment = "fixed";
+	document.body.style.maxWidth = "600px";
+	document.body.style.margin = "50px auto";
+	document.body.style.padding = "0px 30px"
+	document.getElementsByClassName('post')[0].style.background='rgba(0,0,0,0.4)';
+	document.getElementsByClassName('post')[0].style.padding='20px';
+	document.getElementById('homepage').style.display='inline';
+	
+    }
+
+    function copyPageUrl() {
+    // 현재 페이지의 URL을 클립보드에 복사
+    navigator.clipboard.writeText(window.location.href)
+        .then(() => {
+            alert("주소가 복사 되었습니다");
+        })
+        .catch(err => {
+            console.error("복사 중 오류 발생. 다시 시도해 주세요", err);
+        });
+}
+
+</script>
+
