@@ -1,33 +1,45 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var modal = document.getElementById("modal");
-  var btn = document.querySelector(".site-title__text--sub");
-  var span = document.getElementsByClassName("close")[0];
+  var intro = document.getElementById("intro_modal");
+  var blog = document.getElementById("blog_modal");
+  var btn1 = document.querySelector("#intro");
+  var btn2 = document.querySelector("#blog");
+  var span1 = document.getElementsByClassName("close")[0];
+  var span2 = document.getElementsByClassName("close")[1];
   var title = document.querySelector(".site-title__wrapper"); // 타이틀을 선택하는 셀렉터
   var particle = document.querySelector(".particles-js-canvas-el");
 
-  btn.onclick = function() {
-    modal.style.display = "block";
+  btn1.onclick = function() {
+    intro.style.display = "block";
     title.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
     particle.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
-    loadRecentPosts();
   }
 
-  span.onclick = function() {
-    modal.style.display = "none";
+  btn2.onclick = function() {
+    blog.style.display = "block";
+    title.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
+    particle.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
+  }
+
+  span1.onclick = function() {
+    intro.style.display = "none";
+    blog.style.display = "none";
+    title.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
+    particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
+  }
+
+  span2.onclick = function() {
+    intro.style.display = "none";
+    blog.style.display = "none";
     title.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
     particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
   }
 
   window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (event.target == intro || event.target == blog) {
+      intro.style.display = "none";
+      blog.style.display = "none";
       title.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
       particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
     }
   };
 });
-
-function loadRecentPosts() {
-  // 포스트 로딩 로직
-  document.getElementById("recent-posts").innerHTML = "<p>포스트1</p><p>포스트2</p>"; // 예시 데이터
-}

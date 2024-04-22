@@ -55,24 +55,26 @@ layout: default
 <div class="site-title__wrapper"> 
     <h1>
       <span class="site-title__text">{{site.full_name}}</span>
-      <span class="site-title__text--sub">시작하기</span>
+      <span class="site-title__text--sub" id="intro">소개</span>
+      &nbsp;
+      <span class="site-title__text--sub" id="blog">묵상</span>
     </h1>
   </div>
 
-<div id="modal" class="modal">
+<div id="blog_modal" class="modal">
   <div class="modal-content">
     <iframe src="/blog" width="100%" height="400" frameborder="0"></iframe>
     <span class="close">×</span>
   </div>
 </div>
 
+<div id="intro_modal" class="modal">
+  <div class="modal-content">
+    <iframe src="/intro" width="100%" height="400" frameborder="0"></iframe>
+    <span class="close">×</span>
+  </div>
+</div>
 
-<!--<script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/js/particles.js"></script>
-<script type="text/javascript" src="{{ base.url | prepend: site.url }}/assets/js/app.js?v=1"></script>
--->
 <script type="text/javascript" src="/assets/js/particles.js"></script>
 <script type="text/javascript" src="/assets/js/app.js?v=1"></script> 
 <script type="text/javascript" src="/assets/js/modal.js?v=1"></script>
-
-
-
