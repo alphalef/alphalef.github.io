@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   btn1.onclick = function() {
     intro.style.display = "block";
     title.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
-    particle.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
+  //  particle.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
   }
 
 //  btn2.onclick = function() {
@@ -24,14 +24,14 @@ document.addEventListener('DOMContentLoaded', function() {
     intro.style.display = "none";
     blog.style.display = "none";
     title.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
-    particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
+//    particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
   }
 
   span2.onclick = function() {
     intro.style.display = "none";
     blog.style.display = "none";
     title.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
-    particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
+//    particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
   }
 
   window.onclick = function(event) {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
       intro.style.display = "none";
       blog.style.display = "none";
       title.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
-      particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
+ //     particle.classList.remove("hidden"); // 모달이 닫힐 때 타이틀 보이기
     }
   };
 });
