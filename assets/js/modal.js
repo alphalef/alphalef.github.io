@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
     particle.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
   }
 
-  btn2.onclick = function() {
-    blog.style.display = "block";
-    title.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
-    particle.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
-  }
+//  btn2.onclick = function() {
+//  blog.style.display = "block";
+//  title.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
+//  particle.classList.add("hidden"); // 모달이 열릴 때 타이틀 숨기기
+//  }
 
   span1.onclick = function() {
     intro.style.display = "none";
