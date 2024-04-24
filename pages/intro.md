@@ -12,7 +12,8 @@ p {
 </style>
 
 <h2 style="color:#FFF">notices</h2>
-
+<a href="/contact">contact</a>
+<br><br>
 2024.4.25.<br>
 비 온 뒤의 하늘이 맑네요. 우리 마음의 먼지도 닦아내는 하루가 되길..
 <br><br>
