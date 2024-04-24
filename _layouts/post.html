@@ -13,8 +13,7 @@ layout: default
   </div>
 
   <br>
-  <a href="/blog" id="iframe-blog" style="text-align:center">[목록]</a>
-  <a href="/blog/index2" id="page-blog" style="text-align:center; display:none;">[목록]</a>
+  <a href="/blog" style="text-align:center">[목록]</a>
   &nbsp;
   <a href="#" onclick="copyPageUrl()">[주소복사]</a>
   &nbsp;
@@ -27,7 +26,7 @@ layout: default
     // iframe 내부에서 실행되고 있음
     } else {
     // 직접 로드되고 있음
-	document.body.style.background = "url('../assets/images/back2.png')";
+	document.body.style.background = "url('/assets/images/back2.png')";
 	document.body.style.backgroundSize = "cover";
 	document.body.style.backgroundAttachment = "fixed";
 	document.body.style.padding = "0px 30px"
@@ -36,8 +35,6 @@ layout: default
 	document.getElementsByClassName('post')[0].style.padding='20px';
 	document.getElementsByClassName('post')[0].style.margin='30px auto';
 	document.getElementById('homepage').style.display='inline';
-	document.getElementById('page-blog').style.display='inline';
-	document.getElementById('iframe-blog').style.display='none';
 	
     }
 

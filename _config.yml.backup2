@@ -20,7 +20,13 @@ exclude:
   - Gemfile
   - Gemfile.lock
  
-paginate: 4
+collections:
+  blog_posts:
+    output: true
+    permalink: /collection/:name
+  blog_tags:
+
+paginate: 3
 paginate_path: /blog/page:num/
 
 permalink: pretty

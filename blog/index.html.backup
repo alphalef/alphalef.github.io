@@ -4,12 +4,10 @@ title: Blog
 paginate: true
 ---
 
-
-<h3 class="header__title">공간(空間)</h3>
-
 <ul class="post-list">
   <!-- All posts -->
-  {% for post in paginator.posts %}
+  {% assign posts = site.blog_posts | reverse %}
+  {% for post in posts limit:3 %}
     <li>
       <h2 style="margin-bottom: 0.43em;">
         <a class="post-list__link" href="{{ post.url | relative_url }}" style="color:#FFF;">{{ post.title | escape }}</a>
@@ -19,16 +17,7 @@ paginate: true
   {% endfor %}
 
   <br><br>
-  <a href="/" id="homepage" style="display:none;">[첫화면]</a>
-  <!-- 페이지네이션 링크 -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-	 <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">이전</a>
-    {% endif %}
-    {% if paginator.next_page %}
-	<a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">다음</a>
-    {% endif %}
-  </div>
+    <a href="/" id="homepage" style="display:none;">[첫화면]</a>
 </ul>
 
 
@@ -37,7 +26,7 @@ paginate: true
     // iframe 내부에서 실행되고 있음
     } else {
     // 직접 로드되고 있음
-	document.body.style.background = "url('/assets/images/back.png')";
+	document.body.style.background = "url('../assets/images/back.png')";
 	document.body.style.backgroundSize = "cover";
 	document.body.style.backgroundAttachment = "fixed";
 	document.body.style.maxWidth = "600px";
