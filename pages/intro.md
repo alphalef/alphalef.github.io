@@ -8,6 +8,7 @@ tags:   etc
 <style>
 p {
     line-height: 1.5;
+    padding-right: 10px;
 }
 </style>
 
